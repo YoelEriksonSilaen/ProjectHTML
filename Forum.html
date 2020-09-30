@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="img/logo.png" alt="" width="140px" height="110px">
+    </div>
+    
+    <div id="navbar">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Regist1.html">Registrasi</a></li>
+        <li><a href="http://localhost/Yels/Login.php">Login</a></li>
+        <li><a href="http://localhost/Yels/Feedback.php">Feedback</a></li>
+        <li><a href="Rating.html">Rating</a></li>
+        <li><a href="Forum.html">Forum</a></li>
+    </div> 
+
+    <div id="AddThread">
+
+        <table id="JudulFrm">
+            <tr>
+                <th class="jdl" width="5000px"  >
+                    Forum
+                </th width="10px"> 
+                <th>
+                    <button class="open" onclick="oForm()">AddThread</button>
+                </th>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="add">
+        <h3>Thread</h3>
+        
+        <input type="text" name="n" placeholder="Input Title" id="dul" />
+        <br>
+        <br>
+        <textarea name="" placeholder="Input Thread Disini" id="a" cols="100" rows="10"></textarea>
+        <br>
+        <button class="Submit" onclick="cForm()">Submit</button>
+      </div>
+
+    <div id="forum">
+        <header class="frm">
+            <table id="headForum"  >
+                <tr >
+                    <th width="5000px" >
+                    Username, Yole!
+                    </th>
+                    <th width="10px">
+                    04/07/2020
+                    </th>
+                </tr>
+            </table>
+        </header>
+          
+        <section>
+            <div class="hallo">
+                <img src="img/user.png" alt="" width="145px" height="110px">
+            <p>
+                Yole
+            </p>
+            </div>
+            
+            <article>
+              <h2>Scholarship for Asian Students Studying in Korea dari POSCO TJ Park Foundation</h2>
+              <p>Program beasiswa ini ditujukan bagi para calon pemimpin Asia dengan menyediakan biaya perkuliahan dan biaya hidup dari negara-negara Asia, termasuk Indonesia</p>
+              <p>Beasiswa ini dapat digunakan untuk mendaftar Program Master dan Doktoral pada perguruan tinggi ternama di Korea.</p>
+            </article>
+        </section>
+          
+          <footer>
+            <button class="btn" onclick="openForm()">
+                Reply
+            </button>
+          </footer>
+
+          <div id="reply">
+            <h3>Reply Form</h3>
+            <textarea name="" placeholder="Input Balasan Disini" id="r" cols="100" rows="10"></textarea>
+            <br>
+            <button class="cancel" onclick="closeForm()">Submit</button>
+          </div>
+ 
+    </div>
+
+    <div id="footer">
+        Yole's Scholarship &copy; 2020
+    </div>
+
+        
+        
+        
+    
+
+    
+</body>
+<script src="js/forum.js" ></script>
+</html>
